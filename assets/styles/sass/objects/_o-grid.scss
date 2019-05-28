@@ -1,0 +1,50 @@
+.o-grid {
+
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &:not(:last-of-type) {
+      margin-bottom: var(--separate);
+    }   
+  }
+
+  &__box {
+    box-sizing: border-box;
+  }
+}
+
+[class*="col-"] {
+  &:not(:last-of-type) {
+    margin-right: var(--separate);
+  }
+}
+
+// Alinear cajas
+
+.box {
+  &-center  { align-self: center; }
+  &-end     { align-self: flex-end; }
+  &-start   { align-self: flex-start; }
+  &-stretch { align-self: stretch; }
+}
+
+// Alinear contenido
+
+.content {
+  &-center  { align-items: center; }
+  &-end     { align-items: flex-end; }
+  &-stretch { align-items: stretch; }
+  &-start   { align-items: flex-start; }
+}
+
+// Alinear filas
+
+.row {
+  &-around  { justify-content: space-around; }
+  &-between { justify-content: space-between; }
+  &-center  { justify-content: center; }
+  &-end     { justify-content: flex-end; }
+  &-reverse { flex-direction: row-reverse; }
+  &-start   { justify-content: flex-start; }
+}
