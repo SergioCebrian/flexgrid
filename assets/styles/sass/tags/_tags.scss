@@ -10,6 +10,8 @@ code {
 
 h3 {
 	color: #2bb867;
+    font-weight: normal;
+	font-family: var(--font);
 }
 
 pre {
@@ -17,4 +19,5 @@ pre {
     margin: 1rem 0 0;
     background: #fcfcfc;
     border-left: 4px solid rgba(46,204,113,0.25);
+    white-space: pre-wrap;
 }

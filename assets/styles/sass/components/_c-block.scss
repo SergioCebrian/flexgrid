@@ -1,6 +1,6 @@
 .c-block {
   background-color: rgba(46, 204, 113,.25);
-  padding: 8px;
+  padding: 8px var(--separate);
 
   &__box {
 	  background-color: rgba(46, 204, 113,1.0);
@@ -9,8 +9,12 @@
 	  font-size: 1rem;
 	  font-weight: bold;
 	  letter-spacing: .04rem;
-	  padding: 4px;
+	  padding: 8px 4px;
 	  text-align: center;
+
+	  &--highlight {
+	  	background-color: #1b7e45;
+	  }
   }
 
   &--height {

@@ -24,11 +24,12 @@
 @import "components/_c-header";
 @import "components/_c-block";
 
-/*
-// SCOPES
-@import "scopes/_scopes";
 
+// SCOPES
+//@import "scopes/_scopes";
+
+// EXTERNAL
+@import "external/_external";
 
 // UTILITIES
-@import 'utilities/_utilities';
-*/
+//@import 'utilities/_utilities';

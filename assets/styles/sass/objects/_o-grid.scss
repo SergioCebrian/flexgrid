@@ -2,6 +2,7 @@
 
   &__container {
     display: flex;
+    flex-direction: row;
     flex-flow: row nowrap;
 
     &:not(:last-of-type) {
@@ -15,9 +16,13 @@
 }
 
 [class*="col-"] {
-  &:not(:last-of-type) {
-    margin-right: var(--separate);
+  margin-right: var(--separate);
+  &:not([class*="offset-"]) {
+      margin-left: var(--separate);
   }
+  /*&:not(:last-of-type) {
+    margin-right: var(--separate);
+  }*/
 }
 
 // Alinear cajas
@@ -27,6 +32,8 @@
   &-end     { align-self: flex-end; }
   &-start   { align-self: flex-start; }
   &-stretch { align-self: stretch; }
+  &-first   { order: -1; }
+  &-last    { order: 1; }
 }
 
 // Alinear contenido

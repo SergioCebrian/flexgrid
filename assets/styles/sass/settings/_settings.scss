@@ -1,5 +1,13 @@
 :root {
+  // Units
   --columns: 12;
   --fullw: 100%;
-  --separate: 10px;
+  --separate: .3rem;
+  //--separate: 10px;
+
+  // Colors
+  --grey: #5d5c5c;
+
+  // Fonts
+  --font: 'Roboto Condensed', sans-serif;
 }
