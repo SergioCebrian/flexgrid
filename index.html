@@ -13,7 +13,7 @@
         <!-- COLS -->
         <section class="o-section">
             <header class="c-header">
-             <h2 class="c-header__h2">Responsive</h2>
+             <h2 class="c-header__h2">Responsivo</h2>
             </header>
             <div class="o-grid">
               <div class="o-grid__container  c-block  c-block">
@@ -68,8 +68,8 @@
               <code>
 &lt;div class="o-grid"&gt;
   &lt;div class="o-grid__container"&gt;
-    &lt;div class="o-grid__box  col-1"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
-    &lt;div class="o-grid__box  col-11"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  <strong>col-1</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  <strong>col-11</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
               </code>
@@ -121,7 +121,7 @@
               <code>
 &lt;div class="o-grid"&gt;
   &lt;div class="o-grid__container"&gt;
-    &lt;div class="o-grid__box  col-1  offset-11"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  col-1  <strong>offset-11</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
               </code>
@@ -132,7 +132,7 @@
 
         <section class="o-section">
             <header class="c-header">
-             <h2 class="c-header__h2">Distribución</h2>
+             <h2 class="c-header__h2">Distribución horizontal</h2>
             </header>
             
             <!-- ALIGNEMENT ROWS: START -->
@@ -141,12 +141,14 @@
             <div class="o-grid">
                 <div class="o-grid__container  c-block  row-start">
                   <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
+                  <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
                 </div>
             </div>
             <pre>
               <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-start"&gt;
+  &lt;div class="o-grid__container  <strong>row-start</strong>"&gt;
+    &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -159,12 +161,14 @@
         <div class="o-grid">
             <div class="o-grid__container  c-block  row-center">
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
+              <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
             </div>
         </div>
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-center"&gt;
+  &lt;div class="o-grid__container  <strong>row-center</strong>"&gt;
+    &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -177,12 +181,14 @@
         <div class="o-grid">
             <div class="o-grid__container  c-block  row-end">
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
+              <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
             </div>
         </div>
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-end"&gt;
+  &lt;div class="o-grid__container  <strong>row-end</strong>"&gt;
+    &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -201,7 +207,7 @@
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-around"&gt;
+  &lt;div class="o-grid__container  <strong>row-around</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -221,7 +227,7 @@
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-between"&gt;
+  &lt;div class="o-grid__container  <strong>row-between</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -234,14 +240,14 @@
 
         <section class="o-section">
             <header class="c-header">
-             <h2 class="c-header__h2">Alinear contenido</h2>
+             <h2 class="c-header__h2">Distribución vertical</h2>
             </header>
 
             <!-- ALIGNEMENT CONTENT: START -->
 
-            <h3>.content-start</h3>
+            <h3>.row-top</h3>
             <div class="o-grid">
-                <div class="o-grid__container  c-block  c-block--height  content-start">
+                <div class="o-grid__container  c-block  c-block--height  row-top">
                   <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
                   <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
                 </div>
@@ -249,7 +255,7 @@
             <pre>
               <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  content-start"&gt;
+  &lt;div class="o-grid__container  <strong>row-top</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -259,9 +265,9 @@
 
         <!-- ALIGNEMENT CONTENT: CENTER -->
 
-        <h3>.content-center</h3>
+        <h3>.row-middle</h3>
         <div class="o-grid">
-            <div class="o-grid__container  c-block  c-block--height  content-center">
+            <div class="o-grid__container  c-block  c-block--height  row-middle">
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
             </div>
@@ -269,7 +275,7 @@
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  content-center"&gt;
+  &lt;div class="o-grid__container  <strong>row-middle</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -279,9 +285,9 @@
 
         <!-- ALIGNEMENT CONTENT: END -->
 
-        <h3>.content-end</h3>
+        <h3>.row-bottom</h3>
         <div class="o-grid">
-            <div class="o-grid__container  c-block  c-block--height  content-end">
+            <div class="o-grid__container  c-block  c-block--height  row-bottom">
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
             </div>
@@ -289,7 +295,7 @@
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  content-end"&gt;
+  &lt;div class="o-grid__container  <strong>row-bottom</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -299,9 +305,9 @@
 
         <!-- ALIGNEMENT CONTENT: END -->
 
-        <h3>.content-stretch</h3>
+        <h3>.row-stretch</h3>
         <div class="o-grid">
-            <div class="o-grid__container  c-block  c-block--height  content-stretch">
+            <div class="o-grid__container  c-block  c-block--height  row-stretch">
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
               <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
             </div>
@@ -309,7 +315,7 @@
         <pre>
           <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  content-stretch"&gt;
+  &lt;div class="o-grid__container  <strong>row-stretch</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -326,7 +332,7 @@
              <h2 class="c-header__h2">Centrado horizontal y vertical</h2>
             </header>
             <div class="o-grid">
-                <div class="o-grid__container  c-block  c-block--height  row-center  content-center">
+                <div class="o-grid__container  c-block  c-block--height  row-center  row-middle">
                   <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
                   <div class="o-grid__box  c-block__box col-4">&nbsp;</div>
                 </div>
@@ -334,7 +340,7 @@
             <pre>
               <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-center  content-center"&gt;
+  &lt;div class="o-grid__container  <strong>row-center</strong>  <strong>row-middle</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -342,6 +348,33 @@
               </code>
             </pre>
         </section>
+
+        <!-- BOX ALIGNEMENT -->
+
+        <section class="o-section">
+            <header class="c-header">
+             <h2 class="c-header__h2">Alineación de cajas</h2>
+            </header>
+            <div class="o-grid">
+                <div class="o-grid__container  c-block  c-block--height">
+                  <div class="o-grid__box  c-block__box col-3  box-top">.box-top&nbsp;</div>
+                  <div class="o-grid__box  c-block__box col-3  box-middle">.box-middle&nbsp;</div>
+                  <div class="o-grid__box  c-block__box col-3  box-bottom">.box-bottom&nbsp;</div>
+                  <div class="o-grid__box  c-block__box col-3  box-stretch">.box-stretch&nbsp;</div>
+                </div>
+            </div>
+            <pre>
+              <code>
+&lt;div class="o-grid"&gt;
+  &lt;div class="o-grid__container"&gt;
+    &lt;div class="o-grid__box  col-3  <strong>box-top</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  col-3  <strong>box-middle</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  col-3  <strong>box-bottom</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  col-3  <strong>box-stretch</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
 
         <!-- REORDENING -->
 
@@ -360,7 +393,7 @@
             <pre>
               <code>
 &lt;div class="o-grid"&gt;
-  &lt;div class="o-grid__container  row-reverse"&gt;
+  &lt;div class="o-grid__container  <strong>row-reverse</strong>"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
@@ -384,7 +417,7 @@
 &lt;div class="o-grid"&gt;
   &lt;div class="o-grid__container"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
-    &lt;div class="o-grid__box  col-4  box-first"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  col-4  <strong>box-first</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -406,7 +439,7 @@
 &lt;div class="o-grid"&gt;
   &lt;div class="o-grid__container"&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
-    &lt;div class="o-grid__box  col-4  box-last"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
+    &lt;div class="o-grid__box  col-4  <strong>box-last</strong>"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
     &lt;div class="o-grid__box  col-4"&gt;&lt;!-- Content here... --&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;

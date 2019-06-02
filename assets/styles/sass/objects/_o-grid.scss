@@ -12,6 +12,10 @@
 
   &__box {
     box-sizing: border-box;
+
+    /*~ [class*="col-"]:not([class^="box-"]) {
+      align-self: baseline;
+    }*/
   }
 }
 
@@ -20,38 +24,36 @@
   &:not([class*="offset-"]) {
       margin-left: var(--separate);
   }
-  /*&:not(:last-of-type) {
-    margin-right: var(--separate);
-  }*/
 }
 
 // Alinear cajas
 
 .box {
-  &-center  { align-self: center; }
-  &-end     { align-self: flex-end; }
-  &-start   { align-self: flex-start; }
+  // Posiciones
+  &-bottom  { align-self: flex-end; }
+  &-middle  { align-self: center; }
   &-stretch { align-self: stretch; }
+  &-top     { align-self: flex-start; }
+
+  // Orden
   &-first   { order: -1; }
   &-last    { order: 1; }
-}
-
-// Alinear contenido
-
-.content {
-  &-center  { align-items: center; }
-  &-end     { align-items: flex-end; }
-  &-stretch { align-items: stretch; }
-  &-start   { align-items: flex-start; }
 }
 
 // Alinear filas
 
 .row {
+  // Horizontal
   &-around  { justify-content: space-around; }
   &-between { justify-content: space-between; }
   &-center  { justify-content: center; }
   &-end     { justify-content: flex-end; }
   &-reverse { flex-direction: row-reverse; }
   &-start   { justify-content: flex-start; }
+  
+  // Vertical
+  &-bottom  { align-items: flex-end; }
+  &-middle  { align-items: center; }
+  &-stretch { align-items: stretch; }
+  &-top     { align-items: flex-start; }
 }
