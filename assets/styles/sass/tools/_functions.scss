@@ -1,19 +1,20 @@
 // Create Grid System
 
-$class-slug-col: col !default;
-
-@for $i from 1 through 12 {
-  .#{$class-slug-col}-#{$i} {
-  	flex-basis: calc( (#{$i} / var(--columns)) * var(--fullw) );
-  }
+@for $i from 1 through $numcolumns {
+	  .#{$class-slug-col}-#{$i} {
+		  	flex-basis: ( ($i / $numcolumns) * $full-w );
+		  	//flex-basis: calc( (#{$i} / var(--columns)) * var(--full-w) );
+	  }
 }
+
 
 // Create Offsets
 
 $class-slug-ofs: offset !default;
 
-@for $i from 1 through 12 {
+@for $i from 1 through $numcolumns {
   .#{$class-slug-ofs}-#{$i} {
-  	margin-left: calc( (#{$i} / var(--columns)) * var(--fullw) );
+  	margin-left: ( ($i / $numcolumns) * $full-w );
+  	//margin-left: calc( (#{$i} / var(--columns)) * var(--full-w) );
   }
 }

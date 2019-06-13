@@ -1,6 +1,6 @@
 .c-block {
   background-color: rgba(46, 204, 113,.25);
-  padding: 8px var(--separate);
+  padding: 8px var(--separate) 3px;
 
   &__box {
 	  background-color: rgba(46, 204, 113,1.0);
@@ -11,6 +11,7 @@
 	  letter-spacing: .04rem;
 	  padding: 8px 4px;
 	  text-align: center;
+	  margin-bottom: var(--separate);
 
 	  &--highlight {
 	  	background-color: #1b7e45;
@@ -18,6 +19,23 @@
   }
 
   &--height {
-  	height: 60px;
+	height: 80px;
   }
+
+}
+
+@media only screen and (min-width: $bk-medium) {
+
+	.c-block {
+		padding: 8px var(--separate);
+
+		&__box {
+			margin-bottom: 0;
+		}
+
+	    &--height {
+	  		height: 60px;
+	    }
+	}
+
 }

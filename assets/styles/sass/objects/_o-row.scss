@@ -1,0 +1,20 @@
+// Alinear filas
+
+.o-row {
+
+    // Horizontal
+    &--around  { justify-content: space-around; }
+    &--between { justify-content: space-between; }
+    &--center  { justify-content: center; }
+    &--end     { justify-content: flex-end; }
+    &--reverse { flex-direction: row-reverse; }
+    &--start   { justify-content: flex-start; }
+    
+    
+    // Vertical
+    &--bottom  { align-items: flex-end; }
+    &--middle  { align-items: center; }
+    &--stretch { align-items: stretch; }
+    &--top     { align-items: flex-start; }
+
+}

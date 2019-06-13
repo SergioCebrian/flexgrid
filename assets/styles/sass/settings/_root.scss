@@ -1,0 +1,20 @@
+// Document root
+
+:root {
+
+  // Breakpoints
+  --bk-medium: $bk-medium;
+  
+  // Sizes
+  --columns: $numcolumns;
+  --full-w: $full-w;
+  --limit-w: 1200px;
+  --separate: $separate;
+
+  // Colors
+  --grey: #5d5c5c;
+
+  // Fonts
+  --font: 'Roboto Condensed', sans-serif;
+
+}

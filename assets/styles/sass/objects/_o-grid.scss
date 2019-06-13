@@ -1,59 +1,52 @@
+// Contenedor rejilla
+
 .o-grid {
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row nowrap;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
 
-    &:not(:last-of-type) {
-      margin-bottom: var(--separate);
-    }   
-  }
+      &:not(:last-of-type) {
+        margin-bottom: var(--separate);
+      }   
+    }
 
-  &__box {
-    box-sizing: border-box;
+    &__box {
+      box-sizing: border-box;
+    }
 
-    /*~ [class*="col-"]:not([class^="box-"]) {
-      align-self: baseline;
-    }*/
-  }
 }
+
+/*@media only screen and (min-width: $bk-medium) {
+
+  .o-grid {
+
+      &__container {
+        flex-wrap: nowrap;
+      }
+  
+  }
+
+}*/
+
+// Columnas
 
 [class*="col-"] {
-  margin-right: var(--separate);
-  &:not([class*="offset-"]) {
-      margin-left: var(--separate);
+    margin-right: var(--separate);
+    width: $full-w;
+
+    &:not([class*="offset-"]) {
+        margin-left: var(--separate);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+  .cols-xs {
+     flex-wrap: wrap;
+
+     [class*="col"] {
+      flex-basis: auto;
+     }
   }
-}
-
-// Alinear cajas
-
-.box {
-  // Posiciones
-  &-bottom  { align-self: flex-end; }
-  &-middle  { align-self: center; }
-  &-stretch { align-self: stretch; }
-  &-top     { align-self: flex-start; }
-
-  // Orden
-  &-first   { order: -1; }
-  &-last    { order: 1; }
-}
-
-// Alinear filas
-
-.row {
-  // Horizontal
-  &-around  { justify-content: space-around; }
-  &-between { justify-content: space-between; }
-  &-center  { justify-content: center; }
-  &-end     { justify-content: flex-end; }
-  &-reverse { flex-direction: row-reverse; }
-  &-start   { justify-content: flex-start; }
-  
-  // Vertical
-  &-bottom  { align-items: flex-end; }
-  &-middle  { align-items: center; }
-  &-stretch { align-items: stretch; }
-  &-top     { align-items: flex-start; }
 }

@@ -1,0 +1,15 @@
+// Alinear cajas
+
+.o-box {
+    
+    // Posiciones
+    &--bottom  { align-self: flex-end; }
+    &--middle  { align-self: center; }
+    &--stretch { align-self: stretch; }
+    &--top     { align-self: flex-start; }
+
+    // Orden
+    &--first   { order: -1; }
+    &--last    { order: 1; }
+
+}
