@@ -3,13 +3,13 @@
 :root {
 
   // Breakpoints
-  --bk-medium: $bk-medium;
+  --bk-medium: #{$bk-medium};
   
   // Sizes
-  --columns: $numcolumns;
-  --full-w: $full-w;
+  --columns: #{$numcolumns};
+  --full-w: #{$full-w};
   --limit-w: 1200px;
-  --separate: $separate;
+  --separate: #{$separate};
 
   // Colors
   --grey: #5d5c5c;

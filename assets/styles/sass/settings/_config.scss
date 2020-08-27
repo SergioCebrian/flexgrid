@@ -1,5 +1,10 @@
 // Cols
 $class-slug-col: col !default;
+$class-slug-col-xsmall: #{$class-slug-col}-xs !default;
+$class-slug-col-small: #{$class-slug-col}-sm !default;
+$class-slug-col-medium: #{$class-slug-col}-md !default;
+$class-slug-col-large: #{$class-slug-col}-lg !default;
+$class-slug-col-xlarge: #{$class-slug-col}-xl !default;
 $numcolumns: 12;
 
 // BreakPoints

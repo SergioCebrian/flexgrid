@@ -7,6 +7,46 @@
 	  }
 }
 
+@media (max-width: $bk-xsmall) {
+	@for $i from 1 through $numcolumns {
+		.#{$class-slug-col-xsmall}-#{$i} {
+				flex-basis: ( ($i / $numcolumns) * $full-w );
+		}
+  	}	
+}
+
+@media (min-width: $bk-small) {
+	@for $i from 1 through $numcolumns {
+		.#{$class-slug-col-small}-#{$i} {
+				flex-basis: ( ($i / $numcolumns) * $full-w );
+		}
+  	}	
+}
+
+@media (min-width: $bk-medium) {
+	@for $i from 1 through $numcolumns {
+		.#{$class-slug-col-medium}-#{$i} {
+				flex-basis: ( ($i / $numcolumns) * $full-w );
+		}
+  	}	
+}
+
+@media (min-width: $bk-large) {
+	@for $i from 1 through $numcolumns {
+		.#{$class-slug-col-large}-#{$i} {
+				flex-basis: ( ($i / $numcolumns) * $full-w );
+		}
+  	}	
+}
+
+@media (min-width: $bk-xlarge) {
+	@for $i from 1 through $numcolumns {
+		.#{$class-slug-col-xlarge}-#{$i} {
+				flex-basis: ( ($i / $numcolumns) * $full-w );
+		}
+  	}	
+}
+
 
 // Create Offsets
 
