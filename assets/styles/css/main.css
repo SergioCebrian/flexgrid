@@ -262,7 +262,7 @@
   margin-left: 100%; }
 
 mark {
-  background-color: none; }
+  background-color: transparent; }
 
 body {
   background-color: #f1f2f6;
@@ -398,5 +398,36 @@ strong {
       margin-bottom: 0; }
     .c-block--height {
       height: 60px; } }
+.c-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  border: 1px solid #D9D9D9;
+  background-color: white; }
+  .c-table td {
+    border-top: 1px solid #D9D9D9; }
+  .c-table td,
+  .c-table th {
+    padding: 20px 0; }
+  .c-table th {
+    line-height: 1.3rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    font-family: var(--font);
+    color: var(--grey); }
+  .c-table thead {
+    background-color: rgba(46, 204, 113, 0.13); }
+  .c-table strong {
+    background-color: inherit;
+    color: inherit;
+    padding: 0; }
+  .c-table mark {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    color: #2ecc71; }
+
 .clearfix {
   display: flow-root; }

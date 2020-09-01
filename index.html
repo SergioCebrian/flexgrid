@@ -488,6 +488,55 @@
             </pre>
 
         </section>
+
+        <!-- MEDIA QUERIES -->
+        <section class="o-section">
+          <header class="c-header">
+           <h2 class="c-header__h2">Media Queries</h2>
+          </header>
+          <div class="o-grid">
+            <div class="o-grid__container  c-block">
+              <div class="o-grid__box  c-block__box  col-7  col-sm-12  col-md-6">
+                A
+              </div>
+              <div class="o-grid__box  c-block__box  col-5  col-sm-12  col-md-6">
+                B
+              </div>
+            </div>
+          </div>
+          <pre>
+            <code>
+&lt;div class="o-grid"&gt;
+&lt;div class="o-grid__container"&gt;
+  &lt;div class="o-grid__box  col-7  <strong>col-sm-12  col-md-6</strong>"&gt;
+    A
+  &lt;/div&gt;
+  &lt;div class="o-grid__box  col-5  <strong>col-sm-12  col-md-6</strong>"&gt;
+    B
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          <table class="c-table">
+            <thead>
+              <th><strong>Extra Small<br> (<576px)</strong></th>
+              <th><strong>Small<br> (>=576px)</strong></th>
+              <th><strong>Medium<br> (>=768px)</strong></th>
+              <th><strong>Large<br> (>=992px)</strong></th>
+              <th><strong>Extra Large<br>(>=1200px)</strong></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><mark>.col-xs-</mark></td>
+                <td><mark>.col-sm-</mark></td>
+                <td><mark>.col-md-</mark></td>
+                <td><mark>.col-lg-</mark></td>
+                <td><mark>.col-xl-</mark></td>
+              </tr>
+            </tbody>
+          </table>
+      </section>
     
     </main>
   </body>
