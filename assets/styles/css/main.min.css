@@ -99,8 +99,8 @@ mark{background-color:transparent}
 body{background-color:var(--base-body);margin:0}
 code{font-size:.9rem;color:var(--dark)}
 h3{color:var(--base-medium);font-weight:400;font-family:var(--font)}
-pre{padding:1.25rem;margin:1rem 0 0;background:var(--light);border-left:4px solid var(--base-light);white-space:pre-wrap}
-strong{background-color:var(--base-medium);color:var(--light);padding:0 .3rem}
+pre{padding:1.25rem;margin:1rem 0 0;white-space:pre-wrap;background:var(--light);border-left:4px solid var(--base-light)}
+strong{padding:0 .3rem;background-color:var(--base-xlight);color:var(--base-medium)}
 .o-wrap{margin:auto;padding:20px;max-width:var(--limit-w);width:auto}
 .o-grid__container{display:flex;flex-direction:row;flex-wrap:nowrap}
 .o-grid__container:not(:last-of-type){margin-bottom:var(--separate)}

@@ -287,14 +287,14 @@ h3 {
 pre {
   padding: 1.25rem;
   margin: 1rem 0 0;
+  white-space: pre-wrap;
   background: var(--light);
-  border-left: 4px solid var(--base-light);
-  white-space: pre-wrap; }
+  border-left: 4px solid var(--base-light); }
 
 strong {
-  background-color: var(--base-medium);
-  color: var(--light);
-  padding: 0 .3rem; }
+  padding: 0 .3rem;
+  background-color: var(--base-xlight);
+  color: var(--base-medium); }
 
 .o-wrap {
   margin: auto;
