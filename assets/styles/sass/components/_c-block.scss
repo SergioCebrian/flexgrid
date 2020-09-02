@@ -1,11 +1,11 @@
 .c-block {
-  background-color: rgba(46, 204, 113,.25);
+  background-color: var(--base-light);
   padding: 8px var(--separate) 3px;
 
   &__box {
-	  background-color: rgba(46, 204, 113,1.0);
+	  background-color: var(--base-medium);
 	  border-radius: 5px;
-	  color: white;
+	  color: var(--light);
 	  font-size: 1rem;
 	  font-weight: bold;
 	  letter-spacing: .04rem;
@@ -14,7 +14,7 @@
 	  margin-bottom: var(--separate);
 
 	  &--highlight {
-	  	background-color: #1b7e45;
+	  	background-color: var(--base-dark);
 	  }
   }
 

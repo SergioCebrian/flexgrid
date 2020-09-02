@@ -12,7 +12,14 @@
   --separate: #{$separate};
 
   // Colors
+  --base-body: #f1f2f6;
+  --base-xlight: rgba(46,204,113,.13);
+  --base-light: rgba(46, 204, 113,.25);
+  --base-medium: rgba(46, 204, 113,1.0);
+  --base-dark: #1b7e45;
+  --dark: #2e2e2e;
   --grey: #5d5c5c;
+  --light: white;
 
   // Fonts
   --font: 'Roboto Condensed', sans-serif;

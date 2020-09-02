@@ -2,11 +2,11 @@
     width: 100%;
     margin-top: 1rem;
     border-collapse: collapse;
-    border: 1px solid #D9D9D9;
-    background-color: white;
+    border: 1px solid var(--base-light);
+    background-color: var(--light);
 
     td {
-        border-top: 1px solid #D9D9D9;
+        border-top: 1px solid var(--base-light);
     }
 
     td,
@@ -25,7 +25,7 @@
     }
 
     thead {
-        background-color: rgba(46,204,113,.13);
+        background-color: var(--base-xlight);
     }
 
     strong {
@@ -38,6 +38,6 @@
         display: block;
         font-weight: bold;
         text-align: center;
-        color: rgba(46, 204, 113,1.0);
+        color: var(--base-medium);
     }
 }

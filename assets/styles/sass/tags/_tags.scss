@@ -1,15 +1,15 @@
 body {
-    background-color: #f1f2f6;
+    background-color: var(--base-body);
     margin: 0;
 }
 
 code {
 	font-size: .9rem;
-    color: #2e2e2e;
+    color: var(--dark);
 }
 
 h3 {
-	color: #2bb867;
+	color: var(--base-medium);
     font-weight: normal;
 	font-family: var(--font);
 }
@@ -17,13 +17,13 @@ h3 {
 pre {
     padding: 1.25rem;
     margin: 1rem 0 0;
-    background: #fcfcfc;
-    border-left: 4px solid rgba(46,204,113,0.25);
+    background: var(--light);
+    border-left: 4px solid var(--base-light);
     white-space: pre-wrap;
 }
 
 strong {
-    background-color: #2ecc71;
-    color: white;
+    background-color: var(--base-medium);
+    color: var(--light);
     padding: 0 .3rem;
 }
