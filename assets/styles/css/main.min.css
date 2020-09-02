@@ -1,6 +1,6 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap);
-:root{--bk-medium:768px;--columns:12;--full-w:100%;--limit-w:1200px;--separate:0.3rem;--base-body:#f1f2f6;--base-xlight:rgba(46,204,113,.13);--base-light:rgba(46, 204, 113,.25);--base-medium:rgba(46, 204, 113,1.0);--base-dark:#1b7e45;--dark:#2e2e2e;--grey:#5d5c5c;--light:white;--font:'Roboto Condensed',sans-serif}
+:root{--bk-medium:768px;--columns:12;--full-w:100%;--limit-w:1200px;--separate:0.3rem;--base-body:#f1f2f6;--base-xlight:rgba(46, 204, 113, 0.13);--base-light:rgba(46, 204, 113, 0.25);--base-medium:#2ecc71;--base-dark:#1b7e45;--dark:#2e2e2e;--grey:#5d5c5c;--light:white;--font:Roboto Condensed,sans-serif}
 .col-1{flex-basis:8.3333333333%}
 .col-2{flex-basis:16.6666666667%}
 .col-3{flex-basis:25%}

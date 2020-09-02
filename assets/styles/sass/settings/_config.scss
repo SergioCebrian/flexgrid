@@ -14,6 +14,20 @@ $bk-medium: 768px;
 $bk-large: 992px;
 $bk-xlarge: 1200px;
 
+// Colors
+$color-base-body: #f1f2f6;
+$color-base-xlight: rgba(46,204,113,.13);
+$color-base-light: rgba(46, 204, 113,.25);
+$color-base-medium: rgba(46, 204, 113,1.0);
+$color-base-dark: #1b7e45;
+$color-dark: #2e2e2e;
+$color-grey: #5d5c5c;
+$color-light: white;
+
+// Fonts
+$base-font: 'Roboto Condensed', sans-serif;
+
 // Sizes
 $full-w: 100%;
+$limit-w: 1200px;
 $separate: .3rem;
